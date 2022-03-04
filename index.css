@@ -1,0 +1,122 @@
+/*CDN Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+/* ==============  Body saraza sacar  ===================*/
+body {
+    background-color: grey;
+}
+
+/* ==============  Nav general  ===================*/
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: black;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+nav .navbar{
+    height: 100%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+
+}
+
+nav .navbar .logo a{
+    color: #fff; 
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav .navbar .nav-links{
+    height: 100%;
+    line-height: 70px;
+   
+}
+
+nav .navbar .nav-links .links{
+    display: flex;
+   
+}
+
+nav .navbar .nav-links .links li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 14px;
+}
+
+nav .navbar .nav-links .links li a{
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    
+}
+    
+/* ==============  Arrow  ===================*/
+
+nav .navbar .nav-links .links li .arrow{
+    height: 100%;
+    width: 22px;
+    text-align: center;
+    color: yellow;
+    line-height: 70px;
+    transition: all 0.3s ease;
+
+}
+
+.navbar .nav-links .links li:hover .htmlCss-arrow,
+.navbar .nav-links .links li:hover .js-arrow{
+transform: rotate(180deg);
+
+
+}
+
+/* ==============  Sub menu  ===================*/
+
+.navbar .nav-links .links .sub-menu{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #000;
+    line-height: 40px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.navbar .nav-links .links .sub-menu li{
+    padding: 0 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .nav-links .links .sub-menu li a{
+    color: #fff;
+    font-size: 15px;
+    font: 500;
+}
+
+
+.navbar .nav-links .links li:hover .htmlCss-sub-menu,
+.navbar .nav-links .links li:hover .js-sub-menu{
+
+    display: block;
+
+}
